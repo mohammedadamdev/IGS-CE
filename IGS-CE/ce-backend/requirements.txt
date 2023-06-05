@@ -1,0 +1,7 @@
+Django==4.2
+djangorestframework==3.14.0
+psycopg2-binary==2.9.6
+psycopg2==2.9.6
+django-multiselectfield==0.1.12
+django-cors-headers
+djangorestframework-simplejwt==5.2.2
