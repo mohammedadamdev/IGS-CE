@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'multiselectfield',
     'corsheaders',
     'rest_framework_simplejwt',
+    'sslserver',
 ]
 
 REST_FRAMEWORK = {
