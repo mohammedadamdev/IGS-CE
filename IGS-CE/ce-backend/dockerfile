@@ -2,12 +2,8 @@ FROM python:3.11-alpine
 
 WORKDIR /ce-backend
 
-COPY requirements.txt .
-
-RUN apk update && apk add --no-cache python3-dev libffi-dev openssl-dev gcc musl-dev
-
-RUN pip install --no-cache-dir -r requirements.txt
-
 COPY . .
+
+RUN pip install -r requirements.txt
 
 CMD ["python", "manage.py", "runsslserver", "0.0.0.0:7000", "--cert", "certificate.pem", "--key", "key.pem"]
